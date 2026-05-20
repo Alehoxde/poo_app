@@ -2,63 +2,45 @@
 <html lang="es">
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>App Educativa</title>
-
-    <link rel="stylesheet" href="style.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POO "Programación Orientada a Objetos"</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="contenedor">
+<header>
+    <h1>POO "Programación Orientada a Objetos"</h1>
+</header>
 
-        <h1>App Educativa</h1>
+<!-- MENÚ PRINCIPAL (TEMAS) -->
+<section class="temas">
 
-        <div class="menu">
+    <button onclick="menu('versiones')">Control de Versiones</button>
+    <button onclick="menu('fundamentos')">Fundamentos</button>
+    <button onclick="menu('estructuras')">Estructuras</button>
+    <button onclick="menu('pensamiento')">Pensamiento</button>
+    <button onclick="menu('apps')">Apps</button>
+    <button onclick="menu('uml')">UML</button>
 
-            <button onclick="mostrar('versiones')">
-                Control de Versiones
-            </button>
+</section>
 
-            <button onclick="mostrar('fundamentos')">
-                Fundamentos
-            </button>
+<!-- SUBTEMAS -->
+<section id="subtemas">
 
-            <button onclick="mostrar('estructuras')">
-                Estructuras
-            </button>
+    <h2>Selecciona un tema arriba</h2>
 
-            <button onclick="mostrar('pensamiento')">
-                Pensamiento
-            </button>
+</section>
 
-            <button onclick="mostrar('apps')">
-                Desarrollo Apps
-            </button>
+<!-- DETALLE -->
+<section id="detalle">
 
-            <button onclick="mostrar('uml')">
-                UML
-            </button>
+    <p>Selecciona un subtema para ver la descripción.</p>
 
-        </div>
+</section>
 
-        <div id="contenido">
-
-            <h2>Bienvenido</h2>
-
-            <p>
-                Selecciona un tema.
-            </p>
-
-        </div>
-
-    </div>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 
